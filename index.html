@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Данная CRM на разработке</title>
+    <!-- Сообщает Internet Explorer использовать самый новый движок для рендера -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <a href="https://msdn.microsoft.com/en-us/library/jj676915%28v=vs.85%29.aspx"></a>
+    <!-- Задание тега Viewport для адаптивного отображения страницы -->
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!-- end -->
+    <meta content="CRM – бесплатный сервис и классическая система для повышения продаж и управления бизнесом. Попробуйте все возможности CRM абсолютно бесплатно!" name="description">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    
+  </head>
+  <body>
+    <header class="header" role=«banner>
+      <div class="container">
+        <nav class="header-nav" role=«navigation»>
+          <div class="header-logo">
+            <a href="#">~Logo~</a>
+          </div>
+          <ul>
+            <li><a href="#">Продукт</a></li>
+            <li><a href="#">Цена</a></li>
+            <li><a href="#">Преимущества</a></li>
+            <li><a href="#">О нас</a></li>
+          </ul>
+        </nav>
+        <div class="header-account">
+          <ul>
+            <li><a href="#" id="loginbtn" class="btn">Личный кабинет</a></li>
+            <li><a href="#">8 800 123-45-67</a></li>
+            <li><a href="#">Заказать звонок</a></li>
+          </ul>
+          <section id="loginBox" class="login-popup">
+            <h2>Личный кабинет</h2>
+            <div id="close"></div>
+            <form method="post" class="minimal">
+              <label for="username">
+                Логин:
+                <input type="text" name="username" id="username" placeholder="Введите логин" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+              </label>
+              <label for="password">
+                Пароль:
+                <input type="password" name="password" id="password" placeholder="Введите пароль" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+              </label>
+              <button type="submit" class="btn-minimal">Войти</button>
+            </form>
+            <p class="signup">Вы еще не с нами?<br><a href="#">Бесплатная регистрация</a></p>
+          </section>
+        </div>
+      </div>
+    </header>
+
+    <main class="main" role=«main>
+      <div class="main-banner">
+        <div class="container">
+          <ul>
+            <li><a href="#" class="btn  banner-signup">ПРИСОЕДИНИТЬСЯ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-features">
+        <div class="container">
+          <div class="main-features__items">
+            <a href="#" class="item item1"></a>
+            <a href="#" class="item item2"></a>
+            <a href="#" class="item item3"></a>
+            <a href="#" class="item item4"></a>
+            <a href="#" class="item item5"></a>
+          </div>
+          <h1>Наши особенности</h1>
+          <div class="main-features__menu tabbed">
+            <input type="radio" name="tabs" id="tab-nav-1" checked>
+            <label for="tab-nav-1">
+              <i class="fa fa-envelope-o fa-4x" aria-hidden="true"></i>
+              <span>Mail</span>
+            </label>
+            <input type="radio" name="tabs" id="tab-nav-2">
+            <label for="tab-nav-2">
+              <i class="fa fa-commenting-o fa-4x" aria-hidden="true"></i>
+              <span>Cliq</span>
+            </label>
+            <input type="radio" name="tabs" id="tab-nav-3">
+            <label for="tab-nav-3">
+              <i class="fa fa-user-o fa-4x" aria-hidden="true"></i>
+              <span>Connect</span>
+            </label>
+            <div class="underline"></div>
+            <div class="tabs">
+              <div class="tabs-all">
+                <div class="tabs-img one"></div>
+                <div class="tabs-right">
+                  <h3>...ключ к успешной работе</h3>
+                  <h4>Изолирование личных данных пользователя</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam cupiditate qui quae natus blanditiis ducimus asperiores distinctio recusandae autem voluptatibus!</p>
+                </div>
+              </div>
+              
+              <div class="tabs-all">
+                <div class="tabs-img two"></div>
+                <div class="tabs-right">
+                  <h3>...ключ к успешной работе</h3>
+                  <h4>Контент и связь в одном представлении.</h4>
+                  <p>Instant message your colleague(s), exchange files and see quick previews - all in one pane.</p>
+                </div>
+              </div>
+              
+              <div class="tabs-all">
+                <div class="tabs-img three"></div>
+                <div class="tabs-right">
+                  <h3>...ключ к успешной работе</h3>
+                  <h4>Объедините свою команду.</h4>
+                  <p>A team collaboration tool that brings people and the resources they need to a single platform. With a host of built-in tools and integrations with other apps, Connect simplifies your team's work and increases productivity.</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-pricelist">
+        <div class="container">
+          <div class="main-pricelist__item">
+            <div class="main-pricelist__item-left">
+              <div>
+                $<span>9</span>
+              </div>
+              <span>За первый месяц</span>
+            </div>
+            <div class="main-pricelist__item-right">
+              <ul>
+                <li>
+                 <i class="fa fa-check" aria-hidden="true"></i> 
+                  Contact Management
+                </li>
+                <li>
+                 <i class="fa fa-check" aria-hidden="true"></i> 
+                  Sales and Purchases
+                </li>
+                <li>
+                 <i class="fa fa-check" aria-hidden="true"></i> 
+                  Inventory and Warehouses
+                </li>
+                <li>
+                 <i class="fa fa-check" aria-hidden="true"></i> 
+                  Expense Reporting
+                </li>
+                <li>
+                 <i class="fa fa-check" aria-hidden="true"></i> 
+                  Manage Subscriptions
+                </li>
+                <li>
+                 <i class="fa fa-check" aria-hidden="true"></i> 
+                  Accounting and Online Payments
+                </li>
+                <li>
+                 <i class="fa fa-check" aria-hidden="true"></i> 
+                  Tax Compliant
+                </li>
+                <li>
+                 <i class="fa fa-check" aria-hidden="true"></i> 
+                  Payment pages
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-reviews">
+        <div class="container">
+          <ul>
+            <li>
+              <i class="fa fa-quote-left fa-3x" aria-hidden="true"></i>
+              <div class="main-reviews__item">
+                <p>Обожаю эту CRM!<br>Отличный инструмент, который держит все на своем пути.</p>
+                <div class="main-reviews__item-id">
+                  <img src="img/1.jpeg" alt="Zeke Howard">
+                  <p>Zeke Howard<br>Partner / Director, Accounts & Strategy, The Brigade Inc</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <i class="fa fa-quote-left fa-3x" aria-hidden="true"></i>
+              <div class="main-reviews__item">
+                <p>Эта CRM помогла увидеть наши продажи в реальном времени и стала неотъемлемой частью нашего процесса. Моими любимыми функциями являются отчеты и уведомления о деятельности.</p>
+                <div class="main-reviews__item-id">
+                  <img src="img/2.jpg" alt="Garrett Winder">
+                  <p>Garrett Winder<br>Managing Partner, Good Work</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <i class="fa fa-quote-left fa-3x" aria-hidden="true"></i>
+              <div class="main-reviews__item">
+                <p>Любите эту систему.<br>Это единственная CRM, которую я действительно хочу использовать. Она построена специально для продавцов.</p>
+                <div class="main-reviews__item-id">
+                  <img src="img/3.jpg" alt="Rick Feineis">
+                  <p>Rick Feineis<br>Managing Partner & Senior Trainer, CAD Training Online</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-registration">
+        <div class="container">
+          <h2>Контролируй процесс своих продаж!</h2>
+          <h3>Попробуй бесплатно!</h3>
+          <form action="#">
+            <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i> 
+            <input type="email" placeholder="Введите ваш Email">
+            <a href="#" class="btn">Бесплатно</a>
+          </form>
+          <p>Регистрируясь, вы соглашаетесь с нашей<br> <a href="#">Политикой конфиденциальности</a></p>
+        </div>
+      </div>
+      <div class="main-feedback">
+        <div class="container">
+          <div class="main-feedback__left">
+            <span>Остались вопросы?</span>
+          </div>
+          <div class="main-feedback__right">
+            <span>Позвоните по бесплатному номеру</span>
+            <a href="#" class="number">8 800 123-45-67</a>
+            <span>или
+              <a href="#" class="btn"><i class="fa fa-volume-control-phone fa-lg" aria-hidden="true"></i> Закажите звонок</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-about">
+          <p>Тут будет важная информация...</p>
+        </div>
+        <div class="footer-nav">
+
+        </div>
+        <div class="footer-social">
+
+        </div>
+      </div>
+    </footer>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
